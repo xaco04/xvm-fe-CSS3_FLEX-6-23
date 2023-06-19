@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(../images/BingWallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  box-shadow: 0px 10px -10px -20px rgba(0, 0, 0, 0.5);
+}
+/* Inicio Sombreado del contenedor*/
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+/* Fin Sombreado del contenedor*/
+
+.header {
+  color: #E9E9E9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6.3vh;
+  font-size: 13px;
+  margin-top: -7px;
+  
+}
+.header a {
+  color: #E9E9E9;
+  text-decoration: none;
+}
+#header-izq {
+  display: flex;
+  width: 50vw;
+  margin-left: 15px;
+  height: 100%;
+  align-items: center;
+  font-size: 12px;
+  z-index: 1;
+
+}
+
+#header-der {
+  margin-left: 15px;
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 12px;
+  z-index: 1;
+}
+#icondesp-izq {
+  width: 25px;
+  height: auto;
+}
+
+#header-logo {
+  display: flex;
+  margin-left: 170px;
+  align-items: center;
+  margin-right: 81px;
+}
+
+#micrologo {
+  width: 30px;
+  height: 30px;
+  margin-right: 0;
+}
+#mbing {
+  font-size: 18px;
+}
+.herr-der {
+  margin-right: 40px;
+}
+.herr-izq {
+  margin-left: 20px;
+}
+#iconconf-der {
+  width: 27px;
+  height: auto;
+  margin-right: 220px;
+  margin-left: 27px;
+}
+
+#iconreward-der {
+  width: 25px;
+  margin-left: 5px;
+}
+
+#iconuser-der {
+  border-radius: 100%;
+  margin-left: 5px;
+}
+
+
+
+.main {
+  display: flex;
+  height: 98.2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.main-content {
+  max-width: 95w;
+  position: fixed;
+
+}
+
+.main-cslide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+textarea {
+  border: 0;
+  height: 2.5vh;
+  width: 26vw;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  font-size: 15px;
+}
+
+
+
+#cont-buscador {
+  margin-top: -320px;
+  width: 32vw;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+
+}
+
+#cont-buscador img {
+  width: 30px ;
+  height: auto;
+}
+.l-icon {
+  margin: 10px;
+}
+.r-icon {
+  margin: 5px;
+}
+.last-icon {
+  margin-right: 5px;
+}
+
+.cont-cslide {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(231, 254, 255, 0.95); /*l'ultimo valor para ajustar transparencia */
+  backdrop-filter: blur(1px); /*efecto borroso*/
+  width: 25vw;
+  height: 23vh;
+  border-radius: 7px;
+}
+.contbarras-cslide {
+  background: rgba(231, 254, 255, 0.0);
+  display: flex;
+  height: 50px;
+  width: 20vw;
+}
+.barras-cslide {
+
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  background-color: #184AB5;
+  width: 90px;
+  height: 5px;
+  margin-top: 16px !important;
+  margin: 8px;
+  border-radius: 30px;
+}
+
+.main-cont {
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+}
+
+.main-info {
+  text-align: center;
+  width: 20vw;
+  font-size: 15px;
+}
+.main-info h2 {
+  color: #3777FF;
+  background-color: 0;
+  font-size: 25px;
+
+}
+.main-info p {
+  color: #6E6E6E ;
+  font-size: 15.5px;
+}
+
+.flecha-der {
+  display: flex;
+  align-items: center;
+  margin-right: -55px;
+  font-size: xx-large;
+  color: #184AB5;
+
+}
+
+.flecha-izq {
+  display: flex;
+  align-items: center;
+  margin-left: -55px;
+  font-size: xx-large;
+  color: #184AB5;
+
+
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3777FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 0;
+}
+
+
+.main-bottom {
+  width: 65vw;
+  align-items: center;
+  justify-content: center;
+  margin-top: 400px;
+}
+.main-newsslide {
+  display: flex;
+  position: fixed;
+  width: 65vw;
+
+}
+
+.news-izq {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+
+}
+.news-der {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.botones {
+  background: rgba(231, 254, 255, 0.95); /*l'ultimo valor para ajustar transparencia */
+  backdrop-filter: blur(1px); /*efecto borroso*/
+  border-radius: 7px;
+  margin: 2px;
+
+}
+.botones img {
+  width: 40px ;
+}
+
+.botmargenes {
+  display: flex;
+  width: 350px;
+  margin-left: 10px;
+  color: grey;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+
+}
+.botmargenes img {
+  width: 30px;
+  height: 30px;
+}
+
+.cont-img {  
+  margin-top: 60px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
+  gap: 0px 10px;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "img1 img2 img3 img4 img5";
+}
+
+.img1 { grid-area: img1; background-image: url(../images/Putin.jpg);}
+
+.img2 { grid-area: img2; background-image: url(../images/presidenta.jpg); }
+
+.img3 { grid-area: img3; background-image: url(../images/sanchez.jpg); }
+
+.img4 { grid-area: img4; background-image: url(../images/delegado.jpg);}
+
+.img5 { grid-area: img5; background-image: url(../images/hola.jpg); }
+
+.imagen {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Establece la sombra */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: sticky;
+  border-radius: 10px;
+}

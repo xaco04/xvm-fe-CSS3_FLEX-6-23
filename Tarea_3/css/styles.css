@@ -1,0 +1,159 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden; /*evitar el desplaçamiento horizontal de la pagina*/
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    grid-template-columns: 1fr;
+}
+
+.header {
+    width: 100vw;
+    color: #D8D8D8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header-izq {
+    width: 50vw;
+
+}
+#header-der {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header a {
+    text-decoration: none;
+    color: #D8D8D8;
+    margin-left: 25px;
+    align-items: center;
+}
+header img {
+    align-items: center;
+}
+.netflixlogo {
+    width: 120px;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.elementosbarra {
+    width: 80px;
+    height: auto;
+}
+.iconobarra {
+    width: 25px;
+    height: auto;
+    margin-left: 40px;
+}
+.lasticon {
+    margin-right: 50px;
+}
+
+.main {
+    padding: 20px; /* Agrega un relleno al contenedor si es necesario */
+}
+
+.container {
+    margin-left: 35px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 0.5fr 1.7fr 0.5fr 1.7fr 0.5fr 1.7fr 0.5fr 1.5fr;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 9px;
+    grid-auto-flow: column;
+    color: #D8D8D8;
+    grid-template-areas:
+    "Documentales Documentales Documentales Documentales Documentales"
+    "img1 img2 img3 img4 img5"
+    "Volver-a-ver Volver-a-ver Volver-a-ver Volver-a-ver Volver-a-ver"
+    "img6 img7 img8 img9 img10"
+    "Series-TV-de-EEUU-para-hacer-un-maratón Series-TV-de-EEUU-para-hacer-un-maratón Series-TV-de-EEUU-para-hacer-un-maratón Series-TV-de-EEUU-para-hacer-un-maratón Series-TV-de-EEUU-para-hacer-un-maratón"
+    "img11 img12 img13 img14 img15"
+    "Otros Otros Otros Otros Otros"
+    ". . . . .";
+}
+
+.imagen {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Establece la sombra */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    position: sticky;
+}
+.container .imagen {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    overflow: hidden;
+}
+
+.container .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1 { grid-area: img1;}
+
+.img2 { grid-area: img2;}
+
+.img3 { grid-area: img3;}
+
+.img4 { grid-area: img4;}
+
+.img5 { grid-area: img5;}
+
+.Volver-a-ver { grid-area: Volver-a-ver; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;}
+
+.Documentales { grid-area: Documentales; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;}
+
+.img6 { grid-area: img6;}
+
+.img7 { grid-area: img7;}
+
+.img8 { grid-area: img8;}
+
+.img9 { grid-area: img9;}
+
+.img10 { grid-area: img10;}
+
+.Series-TV-de-EEUU-para-hacer-un-maratón { grid-area: Series-TV-de-EEUU-para-hacer-un-maratón; display: flex;
+    flex-direction: column;
+    justify-content: flex-end;}
+
+.img11 { grid-area: img11;}
+
+.img12 { grid-area: img12;}
+
+.img13 { grid-area: img13;}
+
+.img14 { grid-area: img14;}
+
+.img15 { grid-area: img15;}
+
+.Otros { grid-area: Otros;}
+
+.titulo {
+    margin-top: 30px;
+    font-size: 23px;
+    font-weight: bold;
+}
